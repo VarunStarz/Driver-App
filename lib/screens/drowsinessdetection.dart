@@ -63,11 +63,10 @@ class _drowsinessDetectionPageState extends State<drowsinessDetectionPage> {
             score++;
           } else
             score--;
-
-          if (score >= 1000) output = '1';
         });
       });
     }
+    if (score >= 10) output = '1';
   }
 
   loadModel() async {
